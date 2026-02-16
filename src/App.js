@@ -1,10 +1,10 @@
-
+import { AllRoutes } from './routes/AllRoutes';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Wrold!</h1>
+      <AllRoutes />
     </div>
   );
 }
