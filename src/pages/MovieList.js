@@ -1,10 +1,12 @@
-
+import { Card } from '../components';
 export const MovieList = () => {
   return (
     <main>
-      <div className="text-9xl bg-emerald-200 p-10 border-8 border-blue-700 rounded-lg m-5">
-        MovieList
-      </div>
+      <section className="max-w-7xl mx-auto py-7">
+        <div className="flex justify-start flex-wrap">
+          <Card />
+        </div>
+      </section>
     </main>
   )
 }
