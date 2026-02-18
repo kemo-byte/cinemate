@@ -1,8 +1,10 @@
-import { useFetch } from "../hooks/useFetch";
+import { useFetch,useTitle } from "../hooks";
 import { Card } from "../components";
 
-export const MovieList = ({apiPath}) => {
+
+export const MovieList = ({apiPath, title}) => {
   const { data: movies } = useFetch(apiPath);
+  const pageTitle = useTitle(title);
 
   return (
     <main>
